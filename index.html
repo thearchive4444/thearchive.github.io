@@ -1,7 +1,36 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PyScript input&output</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+
+
+    <main class = "container">
+
+      <div>
+          <input id="rad1" name="place" type="radio" value="산본점"><label for="rad1">산본점</label>
+          <input id="rad2" name="place" type="radio" value="성남점"><label for="rad2">성남점</label> <br><br>
+          전화번호 : <input id="phone" name="phone_name" type="text"><br>
+          날짜: <input id="currentdate" type="date"><br>
+          시간: <input id="time_" name="time_name" type="text"><br>
+
+          <input id="op11" name="option1" type="radio" value="배경지X"><label for="op11">(없음) 배경지</label>
+          <input id="op12" name="option1" type="radio" value="배경지O"><label for="op12">(있음) 배경지</label><br><br>
+
+          <button id = "add_text" pys-onClick ="message_sending">문자전송</button>
+
+          <script>
+          document.getElementById('currentdate').value = new Date().toISOString().substring(0, 19);;
+          </script>
+      </div>
+        <h6 id = "output_text"></h6>
+
+    </main>
+  <h5 id = "output_text2"></h5>
+  </body>
 </html>
