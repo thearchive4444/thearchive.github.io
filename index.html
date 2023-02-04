@@ -16,7 +16,8 @@
           <input id="rad1" name="place" type="radio" value="산본점"><label for="rad1">산본점</label>
           <input id="rad2" name="place" type="radio" value="성남점"><label for="rad2">성남점</label> <br>
           도어락: <input id="pwd" type="text"><br><br>
-          <? if($_REQUEST['place'] != "") 
+          <? 
+if($_REQUEST['place'] != "") 
           {
           if($_REQUEST['place'] == "산본점") echo (<input id="pwd" type="text" value="산본점">);
           else if($_REQUEST['place'] == "성남점") echo (<input id="pwd" type="text" value="성남점">);
