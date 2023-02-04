@@ -15,16 +15,7 @@
         <h3> 디 아카이브 문자 보내기 </h3> <br><br>
           <input id="rad1" name="place" type="radio" value="산본점"><label for="rad1">산본점</label>
           <input id="rad2" name="place" type="radio" value="성남점"><label for="rad2">성남점</label> <br>
-          도어락: <input id="pwd" type="text"><br><br>
-          <? 
-if($_REQUEST['place'] != "") 
-          {
-          if($_REQUEST['place'] == "산본점") echo (<input id="pwd" type="text" value="산본점">);
-          else if($_REQUEST['place'] == "성남점") echo (<input id="pwd" type="text" value="성남점">);
-          exit;
-          }
-          ?>
-          
+         
           전화번호 : <input id="phone" name="phone_name" type="text"><br>
           날짜: <input id="currentdate" type="date"><br>
           시간: <input id="time_" name="time_name" type="text"><br>
