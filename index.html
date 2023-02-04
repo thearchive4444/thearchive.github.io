@@ -6,8 +6,8 @@
     <title>디아카이브 문자 보내기</title>
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <script>
-      function testCode() {
-        alert("test");
+      function submit() {
+        alert(document.getElementById('pwd').value);
       }
       
       function doorlock(event) {
@@ -37,7 +37,7 @@
           <input id="op11" name="option1" type="radio" value="배경지X"><label for="op11">(없음) 배경지</label>
           <input id="op12" name="option1" type="radio" value="배경지O"><label for="op12">(있음) 배경지</label><br><br>
 
-          <button id = "add_text" onclick="testCode()">문자전송</button>
+          <button id = "add_text" onclick="submit()">문자전송</button>
 
       </div>
     </main>
