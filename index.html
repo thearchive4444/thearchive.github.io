@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>PyScript input&output</title>
-    
+    <script>
+      function testCode() {
+        alert("test");
+      }
+    </script>
     
   </head>
   <body>
@@ -23,7 +27,7 @@
           <input id="op11" name="option1" type="radio" value="배경지X"><label for="op11">(없음) 배경지</label>
           <input id="op12" name="option1" type="radio" value="배경지O"><label for="op12">(있음) 배경지</label><br><br>
 
-          <button id = "add_text" pys-onClick ="message_sending">문자전송</button>
+          <button id = "add_text" onclick="testCode()">문자전송</button>
 
 
     </main>
