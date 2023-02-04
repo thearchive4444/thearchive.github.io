@@ -15,7 +15,7 @@
           event.target.value;
       }
       
-      document.getElementById('currentdate').value = new Date().toISOString().substring(0, 10);;
+      document.getElementById('currentdate').value = new Date().toISOString().substring(0, 10);
       
     </script>
     
@@ -28,7 +28,7 @@
         <h3> 디 아카이브 문자 보내기 </h3> <br><br>
           <input id="rad1" name="place" type="radio" value="산본점" onclick="doorlock(event)"><label for="rad1">산본점</label>
           <input id="rad2" name="place" type="radio" value="성남점" onclick="doorlock(event)"><label for="rad2">성남점</label> <br><br>
-          도어락: <input id="pwd" type="text" value=""> <br><br>
+          도어락: <input id="pwd" type="text" value="" style="background-color: #e2e2e2;"> <br><br>
           
           전화번호 : <input id="phone" name="phone_name" type="text"><br>
           날짜: <input id="currentdate" type="date"><br>
