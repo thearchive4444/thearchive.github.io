@@ -7,13 +7,9 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <script>
       function submit() {
-        const print = document.getElementById('pwd').value;
-        print + = document.getElementById('phone').value;
-        print + = document.getElementById('currentdate').value;
-        print + = document.getElementById('time_').value;
         
         alert(document.getElementById('pwd').value);
-        document.getElementById('output-text').value = print;
+        document.getElementById('output_text').value = document.getElementById('pwd').value;
       }
       
       function doorlock(event) {
@@ -46,8 +42,9 @@
           <button id = "add_text" onclick="submit()">문자전송</button>
 
       </div>
+      <h6 id = "output_text"></h6>
+    
     </main>
-    <h6 id = "output_text"></h6>
-
+    
   </body>
 </html>
